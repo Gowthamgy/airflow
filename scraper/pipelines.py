@@ -1,14 +1,26 @@
 
 import mysql.connector
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv(dotenv_path="/opt/airflow/.env")
+
+# Access variables
+HOST = os.getenv("HOST")
+USER = os.getenv("USER")
+PASSWORD = os.getenv("PASSWORD")
+DB = os.getenv("DB")
+PORT = int(os.getenv("PORT", "3306"))
 
 class MySQLPipeline:
     def open_spider(self, spider):
         self.conn = mysql.connector.connect(
-            host='host.docker.internal',
-            user='root',
-            passwd='122877',
-            db='sam',
-            port=3306
+            host=HOST,
+            user=USER,
+            passwd=PASSWORD,
+            db=DB,
+            port=PORT,
         )
         self.cursor = self.conn.cursor()
 
