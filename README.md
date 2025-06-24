@@ -102,7 +102,7 @@ All services are containerized; no local Python installation required.
 ## 🙋 About Me
 
 - **Name:** Gowtham  
-- **LinkedIn:** [Your LinkedIn](https://www.linkedin.com)  
+- **LinkedIn:** linkedin.com/in/gowtham-gy-95ab57155  
 - **GitHub:** https://github.com/Gowthamgy
 - **Email:** gowthamjohn7@gmail.com.com  
 
