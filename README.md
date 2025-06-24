@@ -103,7 +103,7 @@ All services are containerized; no local Python installation required.
 
 - **Name:** Gowtham  
 - **LinkedIn:** [Your LinkedIn](https://www.linkedin.com)  
-- **GitHub:** https://github.com/Gowthamgy/workspace/ 
+- **GitHub:** https://github.com/Gowthamgy
 - **Email:** gowthamjohn7@gmail.com.com  
 
 ---
