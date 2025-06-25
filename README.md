@@ -27,6 +27,71 @@ This project demonstrates a complete, containerized data pipeline using:
 
 ---
 
+## 📝 About the Project
+
+This project is a fully automated scraping and data pipeline using **Scrapy**, **Apache Airflow**, **MySQL**, and **Docker**, with seamless GitHub integration and development via **VSCode Containers**.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python**: Data processing and Scrapy framework
+- **Scrapy**: Web scraping
+- **Apache Airflow**: Workflow orchestration
+- **MySQL**: Database
+- **Docker**: Containerization
+- **VSCode**: Development environment
+- **GitHub Actions**: CI/CD automation
+
+---
+
+## ✅ Prerequisites
+
+Ensure the following are installed:
+
+1. **Python**  
+   [Download Python](https://www.python.org/downloads/)  
+   Install Scrapy:
+   ```bash
+   pip install scrapy
+   ```
+
+2. **Docker Desktop**  
+   [Download Docker Desktop](https://www.docker.com/products/docker-desktop)
+
+3. **Apache Airflow**  
+   Recommended via Docker. Local installation guide:  
+   [Apache Airflow Installation](https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html)
+
+4. **MySQL**  
+   [Download MySQL](https://dev.mysql.com/downloads/mysql/)
+
+5. **DBeaver (Optional DB GUI)**  
+   [Download DBeaver](https://dbeaver.io/download/)
+
+6. **Git & GitHub**  
+   - [Install Git](https://git-scm.com/downloads)
+   - [GitHub Login](https://github.com/login)
+
+7. **Visual Studio Code (VSCode)**  
+   [Download VSCode](https://code.visualstudio.com/download)
+
+   Install the following extensions:
+   - GitHub Actions  
+     ```bash
+     code --install-extension GitHub.vscode-github-actions
+     ```
+   - Remote - Containers  
+     ```bash
+     code --install-extension ms-vscode-remote.remote-containers
+     ```
+   - GitHub Copilot Chat  
+     ```bash
+     code --install-extension GitHub.copilot-chat
+     ```
+
+---
+
 ## ⚡ Quick Start Guide
 
 ### 1️⃣ Clone the repository
@@ -113,6 +178,34 @@ All services are containerized; no local Python installation required.
 - Keep `.env` file secure, with real credentials only in your local environment.  
 - Adjust configurations like Airflow schedules, MySQL settings as per your needs.  
 - Contributions or suggestions are welcome!  
+
+---
+
+## 🚀 Usage
+
+- Run the Airflow scheduler and webserver via Docker.
+- Trigger DAGs from the Airflow UI.
+- Run Scrapy spiders via Airflow tasks or manually:
+  ```bash
+  docker exec -it <scraper-container> scrapy crawl your_spider
+  ```
+- Use DBeaver to view scraped data in MySQL.
+
+---
+
+## 📚 Resources
+
+- [Scrapy Documentation](https://docs.scrapy.org/en/latest/)
+- [Apache Airflow Documentation](https://airflow.apache.org/docs/)
+- [MySQL Documentation](https://dev.mysql.com/doc/)
+- [Docker Documentation](https://docs.docker.com/)
+- [VSCode Extensions Marketplace](https://marketplace.visualstudio.com/VSCode)
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to submit a pull request or open an issue.
 
 ---
 
